@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cabecalho"></div>
+    <header class="logo-bar">
+        <div class="fox">
+            <img src="imagem/farm_logo.png" alt="">
+        </div>
+        <input type="text" placeholder="Digite o que você procura" />
+        <div class="painel">
+            <div class="a">
+                <img src="imagem/chat.svg" alt="">
+            </div>
+            <div class="b">
+                <span>Central de </span><span><strong>Atendimento</strong></span>
+            </div>
+            <div class="c">
+                <img src="imagem/account.svg" alt="">
+            </div>
+            <div class="d">
+                <span>Bem-vindo(a)</span><span><strong>Entrar</strong> ou <strong>Cadastrar</strong></span>
+            </div>
+            <div class="cart">
+                <img src="imagem/cart.svg" alt="">
+            </div>
+            <div class="d">
+                <span>Meu carrinho</span><span><strong>Seu carinho esta vazio</strong></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <ul>
+            <li><img src="imagem/fragrance.svg" alt="">DESODORANTE</li>
+            <li><img src="imagem/sanitizer.svg" alt="">HIGIENE</li>
+            <li><img src="imagem/dentistry.svg" alt="">HIGIENE BUCAL</li>
+            <li><img src="imagem/admin.svg" alt="">REMEDIOS</li>
+            <li><img src="imagem/health.svg" alt="">SAUDE</li>
+            <li><img src="imagem/water.svg" alt="">SUPLEMENTOS</li>
+            <li><img src="imagem/pil.svg" alt="">ANTIBIOTICO</li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="baner/baner1.webp" alt="Imagem 1">
+                <img src="baner/baner2.webp" alt="Imagem 2">
+                <img src="baner/baner3.webp" alt="Imagem 3">
+            </div>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <section class="infos">
+        <div class="vantagem">
+            <div class="va">
+                <img src="icones/delivery.svg" alt="">
+            </div>
+            <div class="vb">
+                <span><strong>Frete grátis</strong></span>
+                <span>Em compras acima de R$ 100,00!</span>
+            </div>
+        </div>
+        <div class="vantagem">
+            <div class="va">
+                <img src="icones/clock.svg" alt="">
+            </div>
+            <div class="vb">
+                <span><strong>Enviamos</strong></span>
+                <span>Para todo Brasil!</span>
+            </div>
+        </div>
+        <div class="vantagem">
+            <div class="va">
+                <img src="icones/pix.svg" alt="">
+            </div>
+            <div class="vb">
+                <span><strong>Pague com Pix</strong></span>
+                <span>Mais facil e mais rápido!</span>
+            </div>
+        </div>
+        <div class="vantagem">
+            <div class="va">
+                <img src="icones/security.svg" alt="">
+            </div>
+            <div class="vb">
+                <span><strong>Segurança garantida</strong></span>
+                <span>Sua compra protegida!</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias">
+        <div class="categoria">
+            <div class="confira">
+                <img src="baner/confira1.webp" alt="">
+            </div>
+        </div>
+        <div class="categoria">
+            <div class="confira">
+                <img src="baner/confira2.webp" alt="">
+            </div>
+        </div>
+        <div class="categoria">
+            <div class="confira">
+                <img src="baner/confira3.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="mais-vendidos">
+        <h2>Mais vendidos</h2>
+        <div class="produtos">
+            <div class="produto" data-id="001" data-nome="Gift card Google Play R$ 10,00" data-preco="10.55">
+                <img src="produtos/google_play.png" alt="">
+                <p>Gift card Google Play 10 reais</p>
+                <h2>R$ 10,55</h2>
+                <input type="number" class="quantidade" min="1" value="1" style="width: 50px; margin-top: 10px;">
+                <button class="btn-add" onclick="adicionarAoCarrinho(this)">Adicionar</button>
+            </div>
+            <div class="produto" data-id="002" data-nome="Gift card Google Play R$ 20,00" data-preco="21.10">
+                <img src="produtos/google_play.png" alt="">
+                <p>Gift card Google Play 20 reais</p>
+                <h2>R$ 21,10</h2>
+                <input type="number" class="quantidade" min="1" value="1" style="width: 50px; margin-top: 10px;">
+                <button class="btn-add" onclick="adicionarAoCarrinho(this)">Adicionar</button>
+            </div>
+            <div class="produto" data-id="003" data-nome="Gift card Google Play R$ 30,00" data-preco="31.60">
+                <img src="produtos/google_play.png" alt="">
+                <p>Gift card Google Play 30 reais</p>
+                <h2>R$ 31,60</h2>
+                <input type="number" class="quantidade" min="1" value="1" style="width: 50px; margin-top: 10px;">
+                <button class="btn-add" onclick="adicionarAoCarrinho(this)">Adicionar</button>
+            </div>
+            <div class="produto" data-id="004" data-nome="Gift card Google Play R$ 50,00" data-preco="52.70">
+                <img src="produtos/google_play.png" alt="">
+                <p>Gift card Google Play 50 reais</p>
+                <h2>R$ 52,70</h2>
+                <input type="number" class="quantidade" min="1" value="1" style="width: 50px; margin-top: 10px;">
+                <button class="btn-add" onclick="adicionarAoCarrinho(this)">Adicionar</button>
+            </div>
+            <div class="produto" data-id="005" data-nome="Gift card Google Play R$ 100,00" data-preco="105.50">
+                <img src="produtos/google_play.png" alt="">
+                <p>Gift card Google Play 100 reais</p>
+                <h2>R$ 105,50</h2>
+                <input type="number" class="quantidade" min="1" value="1" style="width: 50px; margin-top: 10px;">
+                <button class="btn-add" onclick="adicionarAoCarrinho(this)">Adicionar</button>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const carousel = document.querySelector(".carousel");
+        const dotsContainer = document.querySelector(".dots");
+        const images = document.querySelectorAll(".carousel img");
+        let index = 0;
+
+        images.forEach((_, i) => {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            if (i === 0) dot.classList.add("active");
+            dot.addEventListener("click", () => moveToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        function moveToSlide(i) {
+            index = i;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            document.querySelectorAll(".dot").forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+            });
+        }
+
+        function autoSlide() {
+            index = (index + 1) % images.length;
+            updateCarousel();
+        }
+
+        setInterval(autoSlide, 3000);
+
+
+        // Adicionar ao carrinho
+        // Carrinho salvo no localStorage
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+        function adicionarAoCarrinho(botao) {
+            const produto = botao.parentElement;
+            const id = produto.dataset.id;
+            const nome = produto.dataset.nome;
+            const preco = parseFloat(produto.dataset.preco);
+            const inputQuantidade = produto.querySelector(".quantidade");
+            const quantidade = parseInt(inputQuantidade.value);
+
+            if (quantidade <= 0 || isNaN(quantidade)) {
+                alert("Informe uma quantidade válida.");
+                return;
+            }
+
+            // Verifica se o produto já existe no carrinho
+            const existente = carrinho.find(p => p.id === id);
+            if (existente) {
+                // Atualiza a quantidade se já existir
+                existente.quantidade += quantidade;
+            } else {
+                // Adiciona novo produto
+                carrinho.push({ id, nome, preco, quantidade });
+            }
+
+            // Salva no localStorage
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+            // Abrir o modal automaticamente
+            abrirCarrinho();
+        }
+
+
+        // Abrir e fechar o modal
+        document.querySelector(".cart").addEventListener("click", abrirCarrinho);
+
+        function abrirCarrinho() {
+            document.getElementById("modal-carrinho").classList.add("aberto");
+            renderizarCarrinhoModal();
+        }
+
+        function fecharCarrinho() {
+            document.getElementById("modal-carrinho").classList.remove("aberto");
+        }
+
+        function renderizarCarrinhoModal() {
+            const container = document.getElementById("itens-carrinho-modal");
+            const totalSpan = document.getElementById("total-carrinho-modal");
+
+            container.innerHTML = "";
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            let total = 0;
+
+            if (carrinho.length === 0) {
+                container.innerHTML = "<p>Seu carrinho está vazio.</p>";
+                totalSpan.textContent = "0.00";
+                return;
+            }
+
+            const tabela = document.createElement("table");
+            carrinho.forEach((produto, index) => {
+                const subtotal = produto.preco * produto.quantidade;
+                total += subtotal;
+
+                const linha = document.createElement("tr");
+                linha.innerHTML = `
+            <td>${produto.nome}</td>
+            <td>
+                <button onclick="diminuirQuantidade(${index})">−</button>
+                ${produto.quantidade}
+                <button onclick="aumentarQuantidade(${index})">+</button>
+            </td>
+            <td>R$ ${subtotal.toFixed(2)}</td>
+            <td>
+                <button onclick="removerDoCarrinho(${index})">🗑️</button>
+            </td>`;
+                tabela.appendChild(linha);
+            });
+
+            container.appendChild(tabela);
+            totalSpan.textContent = total.toFixed(2);
+        }
+
+
+        function removerDoCarrinho(index) {
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            carrinho.splice(index, 1);
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            renderizarCarrinhoModal();
+        }
+
+        function aumentarQuantidade(index) {
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            carrinho[index].quantidade++;
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            renderizarCarrinhoModal();
+        }
+
+        function diminuirQuantidade(index) {
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            if (carrinho[index].quantidade > 1) {
+                carrinho[index].quantidade--;
+            } else {
+                carrinho.splice(index, 1); // remove se a quantidade for 1
+            }
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            renderizarCarrinhoModal();
+        }
+
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

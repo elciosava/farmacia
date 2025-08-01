@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Farmácia Saúde</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 10px;
+    }
+
+    .chat-container {
+      background: white;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #chat-messages {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      border-bottom: 1px solid #ddd;
+      background: #fafafa;
+      min-height: 350px;
+    }
+
+    /* Mensagens do usuário */
+    .message {
+      margin-bottom: 12px;
+      max-width: 80%;
+      padding: 10px 15px;
+      border-radius: 20px;
+      line-height: 1.4;
+      font-size: 0.95rem;
+      word-wrap: break-word;
+      background-color: #d1ffd6;
+      color: #246a24;
+      align-self: flex-end;
+      border-bottom-right-radius: 0;
+    }
+
+    /* Área de input e botão */
+    .input-area {
+      display: flex;
+      border-top: 1px solid #ddd;
+      padding: 10px;
+      background: #fff;
+    }
+
+    #chat-input {
+      flex: 1;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 1rem;
+      outline-offset: 2px;
+      transition: border-color 0.3s;
+    }
+    #chat-input:focus {
+      border-color: #3a8ee6;
+      outline: none;
+    }
+
+    #chat-send {
+      background-color: #3a8ee6;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 0 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    #chat-send:hover {
+      background-color: #2a6fc1;
+    }
+
+    /* Scroll customizado */
+    #chat-messages::-webkit-scrollbar {
+      width: 8px;
+    }
+    #chat-messages::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    #chat-messages::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    #chat-messages::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chat-container">
+    <div id="chat-messages"></div>
+
+    <div class="input-area">
+      <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off" />
+      <button id="chat-send">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Coloque aqui o script.js -->
+  <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
