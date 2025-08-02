@@ -192,9 +192,41 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
-.categoria{
+
+.categoria {
     margin: 20px 10px 10px 5px;
 }
+
+#mais-vendidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1600px;
+}
+
+.produto {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+}
+
 .produto img {
     width: 80px;
+    height: auto;
+}
+
+.produto p{
+    text-align: center;
 }
