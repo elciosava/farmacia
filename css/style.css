@@ -203,6 +203,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
+    background: #fff;
 }
 
 .produtos {
@@ -227,6 +228,30 @@ body {
     height: auto;
 }
 
-.produto p{
+.produto p {
     text-align: center;
+}
+
+#m-marcas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30px;
+    background: #e4e4e4;
+}
+
+#m-marcas img {
+    width: 150px;
+}
+
+.marcas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
 }
